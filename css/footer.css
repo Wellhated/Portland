@@ -1,0 +1,18 @@
+.footer {
+    font-size: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    margin-bottom: 5%;
+    z-index: -1;
+}
+
+@media (max-width: 605px) {
+    .footer {
+        margin-bottom: 10%;
+    }
+}

@@ -1,0 +1,93 @@
+@media (max-width: 3000px) {
+    .about-form h4 {
+        margin-top: -5%;
+        font-size: 23;
+        letter-spacing: 4px;
+        font-family: 'raleway', sans-serif;
+    }
+    
+    .about-form p {
+        font-size: 18;
+        line-height: 35px;
+    }
+    
+    .title-icon {
+        margin-top: -1%;
+    }
+    
+    .img-show {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    
+    .img-show button {
+        font-weight: 100;
+        font-size: 12;
+        margin-top: 25%;
+        background: transparent;
+        border: 1px solid black;
+        color: black;
+    }
+    
+    .img-show img {
+        transition: 0.5s;
+    }
+    
+    .img-show div:hover img {
+        transform: scale(120%);
+    }
+}
+
+@media (max-width: 1450px) {
+    .img-show button {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 505px) {
+    .img-show button {
+        letter-spacing: 2px;
+        width: 100;
+        font-size: 8px;
+    }
+    
+}
+
+@media (max-width: 410px) {
+
+    .img-item {
+        height: 30%;
+    }
+    .about-form p {
+        font-size: 13px;
+    }
+    .img-show button {
+        width: 90;
+        height: 25;
+        font-size: 7;
+    }
+}
+
+@media (max-width: 350px) {
+    .img-item {
+        height: 30%;
+    }
+    .about-form p {
+        font-size: 15px;
+    }
+    .img-show button {
+        width: 70;
+        height: 25;
+        font-size: 7;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-height: 800px) {
+    .about-form p {
+        line-height: 1.5;
+        font-size: small;
+    }
+}

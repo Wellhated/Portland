@@ -1,0 +1,231 @@
+
+/* Background Stuff */
+body {
+    font-family: 'raleway', sans-serif;
+    background-image: url('../img/Background/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+.body-light-overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    background-color: rgba(255, 255, 255, 0.452);
+    z-index: -1 ;
+}
+
+/* Cloud Animations */
+.cloud {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 900;
+    animation: cloud-animation 40s linear infinite;
+    float: right;
+    z-index: -1;
+}
+#top-cloud {
+    top: -50;
+}
+#bottom-cloud {
+    bottom: 100;
+}
+
+
+/* Notify Form */
+
+#notify-me-btn {
+    transition: 0.5s;
+}
+
+#notify-me-btn:hover {
+    background-color: transparent;
+    color: black;
+    /* animation: fade-animate-home 2s ease-in-out; */
+}
+
+#notify-send-btn {
+    transition: 0.5s;
+}
+#notify-send-btn:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.form-open-animation {
+    animation: open-animation 1s;
+}
+.form-close-animation {
+    animation: close-animation 1s;
+}
+
+.open-form-animate {
+    animation: close-animation 1s reverse;
+}
+
+/* Contact Form */
+.contact-form-active input, 
+.contact-form-active textarea {
+    animation: open-contact-animation 1s reverse;
+}
+.contact-form-active h4,
+.contact-form-active button {
+    animation: open-btn-contact-animation 1s reverse;
+}
+
+/* Home */
+.home {
+    animation: home-open 1s;
+}
+.home-close {
+    animation: home-open 1s reverse;
+}
+
+
+.rotate {
+    animation: rotate 1s;
+}
+.overlay-bg {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    animation: overlay-animate 2s reverse;
+    
+}
+.btn-fade {
+    animation: fade 1s;
+}
+.btn-unfade {
+    animation: fade 1s reverse;
+}
+.onclick-btn {
+    animation: rotate-click 1.5s ease-in-out;
+}
+.onclick-btn-reverse {
+    animation: rotate-click-reverse 1.5s;
+}
+
+.about-form-active h4,
+.about-form-active p,
+.about-form-active img,
+.about-form-active button {
+    animation: open-btn-about-animation 1s reverse;
+}
+
+.menu {
+    transition: 0.2s;
+}
+.menu:hover {
+    color: rgba(0, 0, 0, 0.514);
+}
+
+
+/* Keyframes */
+
+@keyframes open-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes open-btn-about-animation {
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+@keyframes overlay-animate {
+    0% {
+        background-color: rgba(255, 255, 255, 0.452);
+
+    }
+
+    50% {
+        background-color: rgba(255, 255, 255, 0.993);
+    }
+
+    100% {
+        background-color: rgba(255, 255, 255, 0.452);
+
+    }
+}
+@keyframes rotate-click {
+    100% {
+        transform: rotate(360deg);
+        opacity: 100;
+    }
+}
+@keyframes home-open {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+@keyframes fade {
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes rotate-click-reverse {
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes open-btn-contact-animation {
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+@keyframes open-contact-animation {
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+@keyframes close-animation {
+    0% {
+        opacity: 100;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fade-animate-home {
+    0% {
+        
+    }
+    50% {
+        background-color: rgba(255, 255, 255, 0);
+        color: black;
+    }
+    100% {
+        color: white;
+        background-color: black;
+    }
+}

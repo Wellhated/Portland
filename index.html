@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/body-animations.css">
+    <link rel="stylesheet" href="./css/home_section.css">
+    <link rel="stylesheet" href="./css/notify-form.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/contact-form.css">
+    <link rel="stylesheet" href="./css/about-form.css">
+
+
+    <title>Portland | Home</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav container-fluid">
+        <div class="row">
+            <div class="left col-sm-5">
+
+                <div class="box menu-bar">
+                    <div onclick="open_about()" id="left-menu">
+                        <a class="menu" id="about-text" href="#">ABOUT</a>
+                        <img class="about-check" id="about-check" src="./img/x.png" height="30">
+                        <img class="imgs" id="about-img" src="./img/Features/about.jpg">
+                    </div>
+
+                    <div onclick="open_contact()" id="right-menu">
+                        <a class="menu" id="contact-text" href="#">CONTACT</a>
+                        <img class="contact-check" id="contact-check" src="./img/x.png" height="30">
+                        <img class="imgs" class="contact-img" id="contact-img" src="./img/Features/contact.png">    
+                    </div>
+                </div>
+            </div>
+            <div class="middle col-sm-2">
+                <img id="logo" src="./img/logo.svg">
+            </div>
+            <div class="box right col-sm-5">
+                <a href="#">
+                    <span style="font-size: 22; font-weight: 400; letter-spacing: 10;">0</span>
+                    <span style="font-size: 20;">S</span>
+                    <span style="font-size: 12; letter-spacing: 4; font-weight: 400;">ECONDS LEFT</span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img id="logo-2" src="./img/logo.svg">
+            </div>
+        </div>
+    </nav>
+    <!-- Body -->
+    <div class="body-light-overlay">
+
+    </div>
+    <!-- CLOUDS ANIMATION -->
+    <section>
+        <img id="top-cloud" class="cloud" src="./img/Background/cloud-1.png">
+        <img id="bottom-cloud" class="cloud" src="./img/Background/cloud-2.png">
+        <img class="cloud" src="./img/Background/cloud-1.png">
+        <img class="cloud" src="./img/Background/cloud-2.png">        
+    </section>
+
+    
+    <section class="middle-section">
+
+        <div class="home-section" id="home-section">
+            <h5 id="item-1" class="mid-item">COMING SOON</h5>
+            <div id="item-2" class="mid-item paragraphs">
+                <p>We're currently working on creating something fantastic.</p>
+                <p>We'll be here soon, subscribe to be notified.</p>
+            </div>
+    
+            <a id="item-3" href="#"><button onclick="open_form()" class="mid-item" id="notify-me-btn">
+                NOTIFY ME
+            </button></a>
+        </div>
+
+        <div class="notify-form none" id="notify-form">
+            <div class="row exit-form">
+                <a href="#">
+                    <button onclick="close_form()" id="exit-form">X</button>
+                </a>
+            </div>
+            <div class="form-body">
+                <div class="row head">
+                    <h4>NOTIFY ME</h4>
+                </div>
+                <p>Enter your email address to get notified when site is ready</p>
+                
+                <input type="email" id="notify-email" placeholder="INSERT YOUR E-MAIL" > <br>
+                
+                <button onclick="check_email()" id="notify-send-btn">
+                    SEND
+                </button>
+            </div>
+        </div>
+
+        <div class="contact-form none" id="contact-form">
+            <h4 class="item0">CONTACT</h4>
+            <img src="./img/title-icon.svg"> <br>
+            <input class="item1" type="text" placeholder="NAME">
+            <input class="item2" type="email" placeholder="EMAIL"><br>
+            <textarea class="item3" placeholder="MESSAGE"></textarea> <br>
+            <button>SEND</button>
+
+        </div>
+
+
+        <div class="about-form none" id="about-form">
+            <h4>ABOUT</h4>
+            <img class="title-icon" src="./img/title-icon.svg">
+            <p>Portland is a creative, professional, responsive HTML5 coming soon template, 
+                perfect to keep <br>your audience informed about the official website launch. 
+                If you're looking for something trendy, <br>that's your top choice.</p>
+
+            <div class="img-show">
+                <div>
+                    <img class="img-item" src="./img/Features/features-1.svg"><br>
+                    <button>RESPONSIVE</button>
+                </div>
+                <div>
+                    <img class="img-item" src="./img/Features/features-2.svg"><br>
+                    <button>VALID</button>
+                </div>
+                <div>
+                    <img class="img-item" src="./img/Features/features-3.svg"><br>
+                    <button>CUSTOMIZABLE</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="div-overlay" id="div-overlay"></div>
+
+    <div class="footer">
+        <footer>
+            <p>Website by Infostyle <br>
+                © 2016. All Right Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Javascript -->
+    <script src="./js/notify-form.js"></script>
+    <script src="./js/contact-form.js"></script>
+    <script src="./js/about-form.js"></script>
+
+</body>
+</html>

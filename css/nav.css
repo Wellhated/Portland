@@ -1,0 +1,373 @@
+/* 4K Screens */
+@media (max-width: 3000px) {
+    /* Navbar Row-Collums */
+    .row {
+        display: flex;
+        justify-content: space-around;
+    }
+    .col-sm-2 {
+        margin-top: 1%;
+    }
+    .col-sm-5 {
+        margin-top: 4%;
+    }
+
+    /* Left */
+    .menu-bar {
+        display: inline-flex;
+        position: relative;
+        left: -30;
+    }
+    #about-text {
+        padding-right: 50;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border-right: 0.5px solid black;
+    }
+    #contact-text {
+        padding-left: 50;
+        border-left: 0.5px solid black;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+
+    /* CLICKED BUTTON */
+    .about-check {
+        opacity: 0;
+
+        z-index: -1;
+
+        position: absolute;
+        left: 65;
+        top: 10;
+    }
+    .contact-check {
+        opacity: 0;
+
+        z-index: -1;
+
+        position: absolute;
+        left: 240;
+        top: 10;
+    }
+
+    .box {
+        --b:0.5px;   /* thickness of the border */
+        --c:black;   /* color of the border */
+        --w:15px;  /* width of border */
+        
+      
+        border:var(--b) solid transparent; /* space for the border */
+        background:
+          linear-gradient(var(--c),var(--c)) top left,
+          linear-gradient(var(--c),var(--c)) top left,
+          linear-gradient(var(--c),var(--c)) bottom left,
+          linear-gradient(var(--c),var(--c)) bottom left,
+          linear-gradient(var(--c),var(--c)) top right,
+          linear-gradient(var(--c),var(--c)) top right,
+          linear-gradient(var(--c),var(--c)) bottom right,
+          linear-gradient(var(--c),var(--c)) bottom right;
+        background-size:var(--b) var(--w),var(--w) var(--b);
+        background-origin:border-box;
+        background-repeat:no-repeat;
+        
+        /*Irrelevant code*/  
+        width:350px;
+        height:50px;
+        box-sizing:border-box;
+        margin:5px;
+        display:inline-flex;
+        font-size:10px;
+        justify-content:center;
+        align-items:center;
+        line-height:20px;
+    }
+
+
+    /* Middle */
+    #logo {
+        height: 70%;
+    }
+    #logo-2 {
+        display: none;
+    }
+
+    /* Right */
+    .right {
+        margin-top: 4.5%;
+        text-align: center;
+        padding-right: 0;
+    }
+    .right img {
+        display: none;
+    }
+
+
+    /* Text/Image Properties */
+    .nav a {
+        font-family: 'raleway', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+    }
+    .imgs {
+        display: none;
+        height: 45px;
+    }
+
+}
+
+/* Large Laptops */
+@media (max-width: 1440px) {
+    /* Navbar Row-Collums */
+    .row {
+        display: flex;
+        justify-content: space-around;
+    }
+    .col-sm-2 {
+        margin-top: 1%;
+    }
+
+    .col-sm-5 {
+        margin-top: 4%;
+    }
+
+    /* Left */
+    .menu-bar {
+        display: inline-flex;
+    }
+    #about-text {
+        padding-right: 50;
+    }
+    #contact-text {
+        padding-left: 50;
+    }
+
+    /* CLICKED BUTTON */
+    .about-check {
+        position: absolute;
+        left: 40;
+        top: 5;
+    }
+    .contact-check {
+        position: absolute;
+        left: 200;
+        top: 6;
+    }
+
+    /* Middle */
+    #logo {
+        height: 80%;
+    }
+
+    /* Right */
+    .right {
+        padding-right: 0;
+    }
+
+    .box {
+        width: 280;
+    }
+
+
+    /* Text/Image Properties */
+    .nav a {
+        font-family: 'raleway', sans-serif;
+        font-weight: 300;
+        font-size: 11px;
+        color: black;
+        text-decoration: none;
+    }
+    .imgs {
+        display: none;
+    }
+    .box {
+        height: 45;
+    }
+}
+
+@media (max-width: 1000px) {
+    /* Left Menu */
+    .menu-bar a {
+        display: none;
+    }
+    .menu-bar img {
+        display: flex;
+    }
+    .menu-bar {
+        left: -30;
+    }
+    
+    /* CLICKED CHECK */
+    .contact-check {
+        position: absolute;
+        left: 175;
+        top: 5;
+    }
+
+    #about-img {
+        height: 30;
+        padding-right: 50;
+    }
+    #contact-img {
+        height: 40;
+        margin-top: -5;
+        padding-left: 50;
+    }
+
+    .right {
+        padding-right: 0;
+    }
+
+    .box {
+        width: 250;
+    }
+}
+
+
+/* Tablet Devices */
+
+@media (max-width: 800px) {
+    .menu-bar {
+        left: -10;
+    }
+    .right {
+        margin-top: 4.5%;
+    }
+    #logo {
+        position: relative;
+        right: -10;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .box {
+        --c:rgba(255, 255, 255, 0);  
+    }
+
+    .right {
+        display: none;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-check {
+        position: absolute;
+        left: 350;
+        top: 5;
+    }
+    .about-check {
+        position: absolute;
+        left: -135;
+        top: 6;
+    }
+
+    #about-img {
+        margin-right: 350;
+        border: none;
+    }
+    #logo {
+        display: none;
+    }
+    #logo-2 {
+        margin-top: -25%;
+        display: flex;
+    }
+
+
+}
+
+/* Mobile Devics */
+
+/* L Devices */
+@media (max-width: 570px) {
+    #about-img {
+        margin-right: 250;
+    }
+    #contact-img {
+        position: relative;
+        right: -20;
+    }
+    .contact-check {
+        position: absolute;
+        left: 320;
+        top: 5;
+    }
+    .about-check {
+        position: absolute;
+        left: -85;
+        top: 6;
+    }
+
+}
+@media (max-width: 520px) {
+    #about-img {
+        margin-right: 200;
+    }
+    .contact-check {
+        position: absolute;
+        left: 295;
+        top: 5;
+    }
+    .about-check {
+        position: absolute;
+        left: -60;
+        top: 6;
+    }
+}
+
+/* M Devices */
+
+@media (max-width: 425px) {
+    #about-img {
+        margin-right: 100;
+    }
+    .contact-check {
+        position: absolute;
+        left: 245;
+        top: 5;
+    }
+    .about-check {
+        position: absolute;
+        left: -10;
+        top: 6;
+    }
+}
+@media (max-width: 365px) {
+    #about-img {
+        margin-right: 110;
+    }
+    .contact-check {
+        position: absolute;
+        left: 250;
+        top: 5;
+    }
+    .about-check {
+        position: absolute;
+        left: -15;
+        top: 6;
+    }
+}
+
+/* S Devices */
+@media (max-width: 325px) {
+    #about-img {
+        margin-right: 100;
+    }
+    .contact-check {
+        position: absolute;
+        left: 245;
+        top: 5;
+    }
+    .about-check {
+        position: absolute;
+        left: -10;
+        top: 6;
+    }
+}
+
+
