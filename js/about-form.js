@@ -25,6 +25,7 @@ const open_about = () => {
             document.getElementById('contact-check').style.opacity = '0';
             
             setTimeout(() => {
+                document.getElementById('notify-form').setAttribute('class', 'notify-form none');
                 document.getElementById('about-form').className = 'about-form none';
             }, 1000);
     
@@ -64,6 +65,7 @@ const open_about = () => {
             document.getElementById('about-check').style.opacity = '100';
 
             setTimeout(() => {
+                document.getElementById('notify-form').setAttribute('class', 'notify-form none');
                 document.getElementById('home-section').className = 'home-section none';
             }, 1000);
 
@@ -89,7 +91,6 @@ const open_about = () => {
 
         document.getElementById('about-check').className = 'about-check onclick-btn-reverse';
         document.getElementById('about-check').style.opacity = '0';
-
         
         setTimeout(() => {
             document.getElementById('about-form').className = 'about-form none';
