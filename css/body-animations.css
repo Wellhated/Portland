@@ -32,6 +32,13 @@ body {
     float: right;
     z-index: -1;
 }
+
+@keyframes cloud-animation {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 #top-cloud {
     top: -50;
 }
