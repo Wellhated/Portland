@@ -1,0 +1,66 @@
+body {
+    background-color: #212529;
+}
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    background-color: black;
+}
+.form {
+    border: 1px solid #212529;
+    border-radius: 20px;
+    background-color: #212529;
+    position: absolute;
+    margin: 0 auto 0 auto;
+    left: 25%;
+    right: 25%;
+
+    top: 10%;
+    width: 500px;
+    height: 450px;
+}
+form {
+    margin-top: 10%;
+}
+.form input, .desc {
+    margin-left: 30px;
+}
+.name {
+    height: 50px;
+    margin-top: 50px;
+    width: 300px;
+}
+.desc {
+    margin-top: -10px;
+    width: 430px;
+}
+.client {
+    margin-top: -5px;
+    width: 200px;
+}
+.location, .select {
+    margin-top: -7px;
+    width: 200px;
+}
+.select {
+    margin-left: 30px;
+}
+.submit {
+    margin: 50px 35% 0 34%;
+    width: 150px;
+    height: 45px;
+}
+.form input, .form textarea, .form select {
+    background-color: white;
+    border: 1px solid #212529;
+}
+.header-form {
+    display: flex;
+    justify-content: space-between;
+}
+.header-form h5 {
+    padding-top: 15px;
+    padding-left: 20px;
+}
